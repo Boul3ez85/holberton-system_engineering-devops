@@ -1,2 +1,2 @@
 #!/bin/bash
-chmod uGa+x hello
+chmod uga 007 hello
