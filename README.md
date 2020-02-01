@@ -1,1 +1,1 @@
-This is my README.md file to second journey projects
+This is my README.md file to redirections in shell project
