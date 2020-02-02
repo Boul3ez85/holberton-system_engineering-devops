@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo cat list | sort | uniq -u  
+sudo cat list | sort | uniq -u
