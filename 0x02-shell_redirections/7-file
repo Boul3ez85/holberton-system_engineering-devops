@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo echo 'Holberton School' | sudo tee \*\\'"Holberton School"'\'\\*$\?\*\*\*\*\*:"'")
+sudo echo 'Holberton School' > "\*\\\'\"Holberton School\"\'\\\*$\?\*\*\*\*\*:)"
