@@ -1,2 +1,2 @@
 #!/bin/bash
-sudo echo "hello user $moez"
+sudo echo "hello user $user"
