@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# displays the time
+
+ii=0
+while [ "$ii" -lt 13 ]; do
+    echo "Hour: $ii"
+    jj=1
+    while [ "$jj" -lt 60 ]; do
+	echo "$jj"
+	let jj+=1
+    done
+    let ii+=1
+done
+
