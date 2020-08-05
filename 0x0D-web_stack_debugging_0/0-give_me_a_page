@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+# Restat apache2 in docker container
+service apache2 start
