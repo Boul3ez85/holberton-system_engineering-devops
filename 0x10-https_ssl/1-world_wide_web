@@ -2,11 +2,11 @@
 # bash script that display information of subdomains.
 
 domain_info () {
-  line=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tr '\t' '\n' | tail -2 | tr '\n' ' ')
-    echo "$2 $line" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
+  l=$(dig "$2"."$1" | grep -A1 'ANSWER SECTION:' | tail -1 | cut -f3- --output-delimiter=' ' | tr ' ' '\n' | tail -2 | tr '\n' ' ')
+    echo "$2 $l" | awk '{print "The subdomain " $1 " is a " $2 " record and points to " $3}'
 }
 
-if [ "$#" == 1 ]
+if [ "$#" == 1 ];
 then
   domain_info "$1" "www"
   domain_info "$1" "lb-01"
