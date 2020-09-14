@@ -8,7 +8,7 @@ if __name__ == "__main__":
     url = "https://jsonplaceholder.typicode.com/"
     users = requests.get(url + "users").json()
 
-    with open("todo_all_employees.json", "w") as f:
+    with open("todo_all_employees.json", "w") as jsonfile:
         json.dump({
             i.get("id"): [{
                 "task": t.get("title"),
@@ -16,4 +16,4 @@ if __name__ == "__main__":
                 "username": i.get("username")
             } for task in requests.get(url + "todos",
                                        params={"userId": i.get("id")}).json()]
-            for i in users}, f)
+            for i in users}, jsonfile)
