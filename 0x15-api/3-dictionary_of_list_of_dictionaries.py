@@ -15,5 +15,5 @@ if __name__ == "__main__":
                 "completed": t.get("completed"),
                 "username": i.get("username")
             } for task in requests.get(url + "todos",
-                                    params={"userId": i.get("id")}).json()]
+                                       params={"userId": i.get("id")}).json()]
             for i in users}, f)
