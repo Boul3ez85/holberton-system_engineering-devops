@@ -15,9 +15,7 @@ def number_of_subscribers(subreddit):
                        headers=headers,
                        allow_redirects=False)
 
-    if type(subreddit) is not str or subreddit is None:
-        return (0)
-    if req.status_code >= 300:
+    if req.status_code != 200:
         return (0)
 
     json = req.json()
