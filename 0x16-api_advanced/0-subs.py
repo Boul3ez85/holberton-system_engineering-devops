@@ -6,9 +6,7 @@ import requests
 def number_of_subscribers(subreddit):
     headers = {
             'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0)\
-                    Gecko/20100101 Firefox/80.0' +
-            'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36\
-                    (KHTML, like Gecko) Chrome/85.0.4183.102 Safari/537.36'
+                    Gecko/20100101 Firefox/80.0'
             }
     req = requests.get('https://www.reddit.com/r/{}/about.json'
                        .format(subreddit),
