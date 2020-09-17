@@ -1,9 +1,13 @@
 #!/usr/bin/python3
-
+"""
+function that queries the Reddit API and returns the number of subscribers
+(not active users, total subscribers) for a given subreddit
+"""
 import requests
 
 
 def number_of_subscribers(subreddit):
+    """ return the number of subscribers"""
     headers = {
             'User-Agent': 'Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:80.0)\
                     Gecko/20100101 Firefox/80.0'
