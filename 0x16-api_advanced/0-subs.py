@@ -18,6 +18,6 @@ def number_of_subscribers(subreddit):
     if req.status_code != 200:
         return (0)
 
-    json = req.json()
-    d = json.get('data', {})
+    req = req.json()
+    d = req.get('data', {})
     return (d.get('subscribers', 0))
