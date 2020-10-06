@@ -7,7 +7,7 @@
 
 ## Background Context :
 
-[![IMAGE_ALT_TEXT_HERE](https://img%100.youtube.com/vi/pSrKT7m4Ego/0.jpg)](https://www.youtube.com/watch?v=pSrKT7m4Ego)
+[![IMAGE_ALT_TEXT_HERE](https://img.youtube.com/vi/pSrKT7m4Ego/0.jpg)](https://www.youtube.com/watch?v=pSrKT7m4Ego)
 
 
 Your web infrastructure is already serving web pages via Nginx that you installed in your [first web stack project](https://github.com/Boul3ez85/holberton-system_engineering-devops/tree/master/0x0C-web_server). While a web server can also serve dynamic content, this task is usually given to an application server. In this project you will add this piece to your infrastructure, plug it to your Nginx and make is serve your Airbnb clone project.
